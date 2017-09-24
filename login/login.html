@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MeetUp Planner -Login</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../lib/bootstrap.css">
+
+    <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAZjn9Xvlue4s4Gu4wi2HX4n1OCtZ2G4jw",
+            authDomain: "meetup-planner-affbd.firebaseapp.com",
+            databaseURL: "https://meetup-planner-affbd.firebaseio.com",
+            projectId: "meetup-planner-affbd",
+            storageBucket: "meetup-planner-affbd.appspot.com",
+            messagingSenderId: "1031937666298"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container">
+         <form class="form-signin" id="stop">
+        <fieldset class="signUp" >
+            <legend>Login</legend>
+
+
+            <div class="form-group col-md-6">
+                <label for="inputEmail4" class="col-form-label">Email</label>
+                <input id="email" type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+
+
+
+            <div class="form-group col-md-6">
+                <label for="inputPassword4" class="col-form-label">Password</label>
+                <input id="password" type="password" class="form-control" id="inputPassword4" placeholder="Password">
+            </div>
+
+            <button  class="btn btn-primary" type="submit"> Login </button>
+
+        </fieldset>
+         </form>
+
+    </div>
+
+    <script src="login.js"></script>
+    <script src="../lib/jquery.js"></script>
+    <script src="../lib/popper.js"></script>
+    <script src="../lib/bootstrap.js"></script>
+</body>
+
+</html>
